@@ -28,16 +28,17 @@ main{display:block;min-height:62vh}
 .mono .dot{width:.2em;height:.2em;border-radius:50%;background:var(--text);margin-left:.08em;flex:none}
 
 /* ---------- Kopfzeile ---------- */
-.topbar{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent}
+@view-transition{navigation:auto}
+.topbar{position:sticky;top:0;z-index:20;background:#000;border-bottom:1px solid #141414;view-transition-name:topbar}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
 .topbar .logo{text-decoration:none;font-size:30px}
-.nav{display:flex;gap:clamp(16px,3vw,36px);list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav{display:flex;gap:clamp(14px,3vw,36px);list-style:none;margin:0;padding:0}
 .nav a{text-decoration:none;color:var(--muted);font-size:15px;padding:4px 0;border-bottom:1px solid transparent}
 .nav a:hover{color:var(--text)}
 .nav a[aria-current="page"]{color:var(--text);border-color:var(--pink)}
 
 /* ---------- Startseite: Hero ---------- */
-.hero{min-height:calc(100vh - 72px);display:grid;place-items:center;text-align:center;padding:40px 0 80px;
+.hero{min-height:calc(100vh - 73px);display:grid;place-items:center;text-align:center;padding:40px 0 80px;
   background:radial-gradient(ellipse 55% 45% at 50% 46%, rgba(255,46,136,.10), transparent 70%)}
 .hero .mono{font-size:clamp(64px,8vw,104px);margin-bottom:clamp(28px,4vw,44px)}
 .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(52px,9.5vw,150px);line-height:1;letter-spacing:-.015em;margin:0}
@@ -86,6 +87,18 @@ main > section.block:first-child{padding-top:clamp(48px,6vw,90px)}
 .project .client{color:var(--muted);font-size:15px;margin:0 0 14px}
 .project p{margin:0 0 22px;max-width:46ch;color:#d6d6d6}
 .project .go{font-weight:500;border-bottom:1px solid var(--pink);padding-bottom:2px}
+
+/* Projektliste nebeneinander */
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px) clamp(14px,1.6vw,20px)}
+.work{display:block;text-decoration:none;color:inherit}
+.work-media{aspect-ratio:4/3;overflow:hidden;position:relative}
+.work-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;padding:7% 0 0;transition:transform .35s ease}
+.work-media.mig{background:#e9f2e4}
+.work-media.sgkb{background:#d7e3dc}
+.work:hover .work-media img{transform:scale(1.03)}
+.work h2{font-family:var(--body);font-weight:500;font-size:clamp(19px,1.6vw,22px);line-height:1.25;margin:14px 0 4px}
+.work p{font-size:15px;line-height:1.45;color:var(--muted);margin:0;max-width:52ch}
+.work:hover h2{text-decoration:underline;text-decoration-color:var(--pink);text-underline-offset:4px}
 
 /* Über mich */
 .about-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:start}
@@ -180,10 +193,16 @@ img.plain{background:transparent}
   body{font-size:17px}
   .intro-grid,.about-grid,.projects,.cv,.grid2,.insights{grid-template-columns:1fr}
   .grid3,.stats,.compare,.timeline{grid-template-columns:1fr}
+  .work-grid{grid-template-columns:1fr 1fr}
   .grid4{grid-template-columns:1fr 1fr}
   .dropped li{grid-template-columns:1fr;gap:4px}
-  .topbar .wrap{flex-direction:column;align-items:center;padding:12px 0;gap:8px}
-  .nav{justify-content:center}
   .hero{min-height:auto;padding:90px 0 100px}
+}
+@media (max-width:560px){.work-grid{grid-template-columns:1fr}}
+@media (max-width:480px){
+  .topbar .wrap{min-height:60px;width:calc(100% - 32px)}
+  .topbar .logo{font-size:24px}
+  .nav{gap:12px}
+  .nav a{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}

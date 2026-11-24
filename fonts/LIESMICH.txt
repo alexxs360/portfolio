@@ -1,0 +1,2 @@
+Lege hier deine Aachen-Bold-Schriftdatei ab und nenne sie aachen-bold.woff2.
+Die Seite verwendet sie dann automatisch für das AF-Logo.

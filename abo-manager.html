@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Abo-Manager – Alexandre Filipowitz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Alfa+Slab+One&family=Permanent+Marker&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <a class="logo" href="index.html" aria-label="Alexandre Filipowitz, zur Startseite">
+    <span class="mono" aria-hidden="true">AF<span class="dot"></span></span>
+    <span class="wordmark" aria-hidden="true">Alexandre<span class="gap"></span>Filipowitz</span>
+  </a>
+  <nav aria-label="Hauptnavigation">
+    <ul class="nav">
+      <li><a href="projekte.html" aria-current="page">Projekte</a></li>
+      <li><a href="ueber-mich.html">Über mich</a></li>
+      <li><a href="lebenslauf.html">Lebenslauf</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="sgkb">
+<div class="wrap">
+    <a class="back" href="projekte.html">Zurück zu den Projekten</a>
+    <header class="cs-hero">
+      <h1>Abo-Manager</h1>
+      <p class="lead">Wo stiftet KI im Banking echten Nutzen? Ein KI-gestütztes Projekt für die St.Galler Kantonalbank, von der offenen Frage bis zum Ergebnis.</p>
+    </header>
+
+    <article class="cs-sheet">
+      <dl class="facts">
+        <div><dt>Auftraggeber</dt><dd>St.Galler Kantonalbank, Thema «Autonomous Banking with AI»</dd></div>
+        <div><dt>Team</dt><dd>Alexandre Filipowitz, Samuel Arnold</dd></div>
+        <div><dt>Zeitraum</dt><dd>September bis November 2026</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Claude, Mobbin, Refero</dd></div>
+      </dl>
+      <figure><img src="images/sgkb_cover.webp" loading="lazy" alt="Abo-Übersicht und Abo-Detail" class="cs-cover"></figure>
+
+      <section class="cs-section">
+        <span class="step">Ausgangslage</span>
+        <h2>Ein offenes Thema und kein Zugang zum System.</h2>
+        <p>Die SGKB gab uns das Thema «Autonomous Banking with AI», aber kein Problem. In Woche 2 zeigte sich zudem: Aus Datenschutzgründen erhalten wir weder Zugriff auf das Design-System noch Einblick in den Aufbau der App.</p>
+        <div class="grid2">
+          <div class="card"><h3>Was das hiess</h3><p>Wir mussten das Problem selbst finden und die visuelle Sprache der Bank aus öffentlichen Quellen rekonstruieren.</p></div>
+          <div class="card"><h3>Wie wir reagierten</h3><p>Zuerst Fokus auf Nutzerprobleme und Prozessdesign statt auf Screens. Das Design-System bauten wir später selbst aus Screenshots von Website und App.</p></div>
+        </div>
+        <p class="hmw">Wo stiftet KI im Banking echten Nutzen, ohne dass Kund:innen das Vertrauen verlieren?</p>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Vorgehen</span>
+        <h2>Zehn Wochen, eine bewusste Abkürzung.</h2>
+        <p>Wir haben jede Woche ein Reporting geschrieben: Was wollten wir erreichen, wo hingen wir fest, was ändern wir? Daraus ist dieser Ablauf entstanden.</p>
+        <ol class="timeline">
+          <li><b>Woche 2</b>Fragebogen erarbeitet, Kernfragen mit dem Auftraggeber geklärt.</li>
+          <li><b>Woche 3</b>KI-Regulierung im Banking recherchiert: fragmentiert, je nach Land anders.</li>
+          <li><b>Woche 4</b>Gespräche geführt, dann bewusst in die Synthese statt weitere Daten zu sammeln.</li>
+          <li><b>Woche 5</b>Customer Journey und sechs Hypothesen aus den Clustern abgeleitet.</li>
+          <li><b>Woche 6</b>Die Pain Points waren klar: statt langer Define-Phase direkt ins Prototyping.</li>
+          <li><b>Woche 7 bis 10</b>Design-System, Prototyp, Feedbackrunden, Audit, Machbarkeit.</li>
+        </ol>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Research</span>
+        <h2>Erst Fakten sammeln, dann deuten.</h2>
+        <p>Mit der Atomic-UX-Research-Methode haben wir getrennt, was wir wissen, was wir daraus schliessen und was wir tun könnten: Fakten aus Berichten, Foren und Konkurrenzprodukten, daraus Insights, daraus Opportunities. Danach folgten vier Interviews mit Personen zwischen 22 und 38, ausgewertet per Affinity Mapping.</p>
+        <div class="insights">
+          <div class="insight"><q>Bei Chatbots fange ich gar nicht erst an, ich rufe direkt an.</q><p>Sichtbare KI war unbeliebt. Gewünscht war KI, die im Hintergrund hilft.</p></div>
+          <div class="insight"><q>Bei smarten Regeln habe ich mehr Vertrauen.</q><p>Das Wort «KI» allein schafft kein Vertrauen, Nachvollziehbarkeit schon.</p></div>
+          <div class="insight"><q>Ich glaube, circa acht Abos.</q><p>Niemand konnte seine Abos vollständig aufzählen. Handy und Fitness wurden vergessen.</p></div>
+          <div class="insight"><q>Bei Finanzen würde ich höchstens einen Fehler erlauben.</q><p>Die Fehlertoleranz ist bei Geld fast null.</p></div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Synthese</span>
+        <h2>Fünf Cluster, eine Haltung: KI ja, aber leise.</h2>
+        <p>Die fünf Cluster: das Abo-Chaos, Frustration im Alltag, Vertrauen und Kontrollbedürfnis, akzeptierte KI-Szenarien und verteilte Finanzen. Aus dem offenen KI-Thema wählten wir das konkreteste Problem: das Abo-Chaos. So wurde der Abo-Manager zum Ergebnis des Projekts. Die anderen Cluster bestimmten, wie wir ihn gestalten.</p>
+        <div class="grid4">
+          <div class="card"><h3>Human in the loop</h3><p>Die KI erkennt und bereitet vor. Senden passiert nur nach aktiver Einwilligung.</p></div>
+          <div class="card"><h3>KI im Hintergrund</h3><p>Kein Assistent, kein Chat. Ein kleiner Hinweis zeigt, wo die KI gearbeitet hat.</p></div>
+          <div class="card"><h3>Fakten statt Belehrung</h3><p>«Preis steigt auf CHF 84.90» statt «Sie sollten kündigen».</p></div>
+          <div class="card"><h3>Nachweis statt Versprechen</h3><p>Status, Beleg und Abbuchungs-Check nach jeder Kündigung.</p></div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Persona &amp; Journey</span>
+        <h2>Der Moment, auf den es ankommt: nach dem Kündigen.</h2>
+        <p>Unsere Persona ist Student in Rapperswil, erledigt fast alles am Smartphone und hat Abos für Spotify, ÖV, Fitness, Netflix und iCloud. Von der Bank erwartet er keine Bevormundung, sondern konkrete Kündigungshilfe und klares Feedback danach.</p>
+        <blockquote class="quote">«Am liebsten würde ich alle Abos an einem Ort und mit einem Klick kündigen.»</blockquote>
+        <p class="mt">Daraus wurde Hypothese 4: Ohne Nachweis und Abbuchungs-Check glaubt niemand, dass eine Kündigung mit einem Tipp wirklich geklappt hat.</p>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Hypothesen</span>
+        <h2>Von der Frage zur prüfbaren Annahme</h2>
+        <p class="hmw">Wie könnten wir Überblick und Kündigung so mühelos machen, dass Nutzer:innen die Kontrolle über ihre Fixkosten zurückgewinnen?</p>
+        <p class="mt">Jede Hypothese folgt dem Muster «Wir glauben, dass … und messen den Erfolg daran, dass …». So wurde aus jedem Screen eine Frage an den Test. Einige Erfolgskriterien:</p>
+        <ul>
+          <li>80 % finden alle aktiven Abos auf einen Blick.</li>
+          <li>80 % entdecken vergessene Abos.</li>
+          <li>75 % geben der KI die Freigabe.</li>
+          <li>Der Kündigen-Button wird direkt gefunden, die Kündigung geht schneller.</li>
+          <li>Die Warnung kommt vor der ersten Zahlung.</li>
+        </ul>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Design mit KI</span>
+        <h2>KI als Werkzeug: Wir entschieden, die KI setzte um.</h2>
+        <p>Ohne Zugriff auf das SGKB-System haben wir für Design und Prototyp mit Claude und Figma gearbeitet. Die Arbeitsteilung war klar geregelt.</p>
+        <table class="split">
+          <thead><tr><th>Wir</th><th>Die KI</th></tr></thead>
+          <tbody>
+            <tr><td>Screenshots von Website und App ausgewählt, Kriterien gesetzt</td><td>Farben gemessen, Kontraste geprüft, Variablen und Komponenten in Figma angelegt</td></tr>
+            <tr><td>Apps und Muster ausgewählt (Mobbin, Refero), Favoriten bestimmt</td><td>Gemeinsame Muster und Abweichungen zusammengefasst</td></tr>
+            <tr><td>Stil, Referenzen und jede Feedbackrunde vorgegeben</td><td>Screens gebaut, verknüpft, Varianten erzeugt</td></tr>
+            <tr><td>Audit gegen Konzept, Tokens und Anzahl Taps</td><td>Korrekturen umgesetzt</td></tr>
+          </tbody>
+        </table>
+        <p>Was sich verändert hat: Varianten in Stunden statt Tagen. Was blieb: Die KI schlug oft zu viel vor, zu viele Kacheln, zu viele Farben. Reduzieren war unsere Aufgabe.</p>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Iterationen</span>
+        <h2>Drei Runden, jedes Mal weniger.</h2>
+        <div class="compare">
+          <figure><img src="images/sgkb_iter1.webp" loading="lazy" alt="Status vorher und nachher"><h3>Status</h3><p>Farbige Badges für jeden Zustand liessen die Preiserhöhung untergehen. Neu: einheitliche neutrale Tags und Filter-Chips. Farbe bleibt den Logos.</p></figure>
+          <figure><img src="images/sgkb_iter2.webp" loading="lazy" alt="Klickbarkeit vorher und nachher"><h3>Klickbarkeit</h3><p>Kündigen lag ausserhalb des Bildschirms. Neu: Chevron an jeder Zeile, fixe Leiste mit Behalten und Kündigen.</p></figure>
+          <figure><img src="images/sgkb_iter3.webp" loading="lazy" alt="Kacheln vorher und nachher"><h3>Kacheln</h3><p>Jeder Inhalt steckte in einem eigenen Rahmen. Neu: flache Abschnitte, getrennt durch feine Linien.</p></figure>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Verworfen</span>
+        <h2>Nicht jede Idee hat den Test am Prototyp überstanden.</h2>
+        <ul class="dropped">
+          <li><div><b>Wisch-Stapel für neue Funde</b>Wirkte verspielt. Im Prototyp liess sich links und rechts nicht unterscheiden.</div><div>Ein Fund-Detail mit zwei klaren Buttons</div></li>
+          <li><div><b>Dunkler Referenz-Stil</b>Passte weder zum Design-System ohne Dark Mode noch zur Bank.</div><div>Hell, eckig, Grün nur für Aktionen</div></li>
+          <li><div><b>Drei Entscheidungs-Buttons</b>«Ist ein Abo», «Kein Abo» und «Kündigen» konkurrierten.</div><div>Behalten und Kündigen, «kein Abo» als Link</div></li>
+          <li><div><b>Vorausgewählte Einwilligung</b>Rechtlich heikel und gegen unser Prinzip «Human in the loop».</div><div>Aktive Einwilligung mit Verweis auf die Nutzungsbedingungen</div></li>
+          <li><div><b>Grüner Header in der Übersicht</b>Viel Fläche, wenig Information.</div><div>Eine Zahl oben, darunter direkt die Abos</div></li>
+        </ul>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Lösung</span>
+        <h2>Der Abo-Manager: vom Überblick zur sicheren Kündigung.</h2>
+        <figure><img src="images/sgkb_loesung.webp" loading="lazy" alt="Vier Screens: Startseite, Abo-Übersicht, Abo-Detail, Kündigung gesendet" class="plain"></figure>
+        <div class="grid4">
+          <div class="card"><h3>Einstieg</h3><p>Abos als eigene Aktion auf der Startseite, mit Hinweis auf neue Funde.</p></div>
+          <div class="card"><h3>Überblick</h3><p>Kosten pro Monat nach Anbieter, einheitliche Status, Filter.</p></div>
+          <div class="card"><h3>Entscheidung</h3><p>Preisänderung als Fakt, Behalten und Kündigen immer sichtbar.</p></div>
+          <div class="card"><h3>Nachweis</h3><p>Status, Beleg und Abbuchungs-Check nach dem Senden.</p></div>
+        </div>
+      </section>
+
+      <section class="cs-section">
+        <span class="step">Learnings</span>
+        <h2>Wie KI meinen UX-Prozess verändert hat.</h2>
+        <div class="grid3">
+          <div class="card"><h3>Schneller zum Prototyp</h3><p>Vom Design-System bis zum verknüpften Prototyp in Tagen. Mehr Zeit blieb für Feedback und Entscheidungen.</p></div>
+          <div class="card"><h3>Reduktion bleibt Handarbeit</h3><p>Die KI produzierte schnell viel. Gutes Design entstand erst, als wir Farben, Kacheln und Buttons wieder weggenommen haben.</p></div>
+          <div class="card"><h3>Kritisch prüfen statt übernehmen</h3><p>Ein Audit gegen Konzept und Tokens fand Fehler, etwa falsche Summen und vorausgewählte Einwilligungen.</p></div>
+        </div>
+        <p><strong>Ausblick:</strong> Die sieben Hypothesen mit dem klickbaren Prototyp und den definierten Erfolgskriterien prüfen. Erkennung, Übersicht und Hinweise zu Preiserhöhungen und Testabos sind gut machbar und mit wenig Risiko verbunden. Die Kündigung selbst erst, wenn Vollmacht, Haftung und Kanäle zu den Anbietern geklärt sind, mit Nutzungsbedingungen und Einwilligung pro Kündigung.</p>
+      </section>
+    </article>
+    <div class="cs-next">
+      <a class="back" href="eco-island.html">Vorheriges Projekt: Eco Island</a>
+      <a class="back" href="kontakt.html">Kontakt aufnehmen</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© Alexandre Filipowitz</span>
+    <span class="foot-links"><a href="mailto:alexandre.filipowitz@gmail.com">E-Mail</a><a href="https://www.linkedin.com/in/DEIN-PROFIL" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

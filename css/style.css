@@ -53,8 +53,10 @@ main:focus{outline:none}
 .nav a[aria-current="page"]{color:var(--text);border-color:var(--accent)}
 
 /* ---------- Startseite: Hero ---------- */
-.hero{min-height:calc(100vh - 73px);min-height:calc(100svh - 73px);position:relative;display:grid;place-items:center;text-align:center;padding:48px 0 96px;
-  background:radial-gradient(ellipse 55% 45% at 50% 46%, rgba(184,176,251,.12), transparent 70%)}
+.hero{min-height:calc(100vh - 73px);min-height:calc(100svh - 73px);position:relative;overflow:hidden;isolation:isolate;display:grid;place-items:center;text-align:center;padding:48px 0 96px}
+.hero > div{position:relative;z-index:1}
+.hero .mono{text-shadow:.07em .06em 0 var(--accent)}
+.hero::before{content:"";position:absolute;left:50%;top:50%;z-index:0;width:min(680px,78vw);aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 60% 65%,#1a0bff 0%,#5b1ff0 45%,rgba(120,60,240,0) 72%);filter:blur(30px);opacity:.85;pointer-events:none}
 .hero .mono{font-size:clamp(64px,8vw,104px);margin-bottom:clamp(28px,4vw,44px)}
 .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(42px,6vw,92px);line-height:1.02;letter-spacing:-.01em;margin:0}
 .hero .role{font-family:var(--display);font-weight:300;font-size:clamp(17px,2vw,29px);line-height:1.25;margin:.45em 0 0;color:#e9e9e9}

@@ -8,6 +8,7 @@
   --text:#fff;
   --muted:#9b9b9b;
   --accent:#b8b0fb;
+  --logo-shadow:#4a14f2;
   --logo:"Aachen","Alfa Slab One",Georgia,serif;
   --serif:"Source Serif 4",Georgia,serif;
   --display:"Montserrat","Helvetica Neue",Arial,sans-serif;
@@ -29,7 +30,7 @@ main:focus{outline:none}
 .rot-toggle:hover{border-color:var(--text)}
 
 /* ---------- Logo ---------- */
-.mono{font-family:var(--logo);font-weight:700;line-height:.8;display:inline-flex;align-items:flex-end;letter-spacing:-.03em;color:var(--text);text-shadow:.07em .06em 0 var(--accent)}
+.mono{font-family:var(--logo);font-weight:700;line-height:.8;display:inline-flex;align-items:flex-end;letter-spacing:-.03em;color:var(--text);text-shadow:.07em .06em 0 var(--logo-shadow)}
 .mono .dot{width:.2em;height:.2em;border-radius:50%;background:var(--text);margin-left:.08em;flex:none}
 
 /* ---------- Kopfzeile ---------- */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="snap">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600&family=Montserrat:wght@200..800&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=afebfebe">
+<link rel="stylesheet" href="css/style.css?v=884ca083">
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
@@ -57,6 +57,42 @@
     <a class="pill all-link" href="projekte.html">Alle Projekte <span aria-hidden="true">→</span></a>
   </div>
 </section>
+<script>
+(function(){
+  // Startseite: ein Scroll im Hero springt direkt zum ganzen Projekte-Bereich (und zurück)
+  var target=document.getElementById("projekte-start");
+  if(!target) return;
+  var reduce=window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var lock=false, touchY=null;
+  function navH(){ var t=document.querySelector(".topbar"); return t ? t.offsetHeight : 0; }
+  function stop(){ return Math.round(target.getBoundingClientRect().top + window.scrollY - navH()); }
+  function go(y){ lock=true; window.scrollTo({top:y, behavior: reduce ? "auto" : "smooth"}); setTimeout(function(){ lock=false; }, 900); }
+  function down(){ return window.scrollY < stop() - 2; }
+  function up(){ var y=window.scrollY; return y > 0 && y <= stop() + 2; }
+  window.addEventListener("wheel", function(e){
+    if(lock){ if(window.scrollY < stop()+2) e.preventDefault(); return; }
+    if(e.deltaY > 0 && down()){ e.preventDefault(); go(stop()); }
+    else if(e.deltaY < 0 && up()){ e.preventDefault(); go(0); }
+  }, {passive:false});
+  window.addEventListener("touchstart", function(e){ touchY=e.touches[0].clientY; }, {passive:true});
+  window.addEventListener("touchmove", function(e){
+    if(touchY===null) return;
+    var dy=touchY-e.touches[0].clientY;
+    if(lock || (dy>0 && down()) || (dy<0 && up())) e.preventDefault();
+  }, {passive:false});
+  window.addEventListener("touchend", function(e){
+    if(touchY===null || lock) return;
+    var dy=touchY-e.changedTouches[0].clientY; touchY=null;
+    if(dy>30 && down()) go(stop()); else if(dy<-30 && up()) go(0);
+  });
+  window.addEventListener("keydown", function(e){
+    if(e.target.closest && e.target.closest("input,textarea")) return;
+    var k=e.key;
+    if((k==="ArrowDown"||k==="PageDown"||(k===" "&&!e.shiftKey)) && down()){ e.preventDefault(); go(stop()); }
+    else if((k==="ArrowUp"||k==="PageUp"||(k===" "&&e.shiftKey)) && up() && window.scrollY>0){ e.preventDefault(); go(0); }
+  });
+})();
+</script>
 </main>
 
 <footer class="site-foot" id="kontakt">

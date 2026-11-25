@@ -62,13 +62,14 @@ main{display:block;min-height:62vh}
 
 /* ---------- Startseite: Fokus mit Laptop ---------- */
 .focus{padding:clamp(60px,8vw,120px) 0;text-align:center}
-.laptop{width:min(900px,100%);margin:0 auto clamp(40px,6vw,70px)}
+.laptop{width:min(540px,88%);margin:0 auto clamp(28px,3.5vw,44px)}
 .laptop .screen{background:#1b1b1b;border:1px solid #333;border-radius:22px 22px 0 0;padding:clamp(10px,1.6vw,18px);box-shadow:0 40px 90px -30px rgba(255,46,136,.25)}
 .laptop .screen img{border-radius:8px;width:100%}
 .laptop .base{height:clamp(12px,1.6vw,20px);background:linear-gradient(#2a2a2a,#111);border-radius:0 0 18px 18px;margin:0 -6%;position:relative}
 .laptop .base::after{content:"";position:absolute;left:42%;right:42%;top:0;height:40%;background:#0c0c0c;border-radius:0 0 8px 8px}
-.focus .kicker{margin-bottom:.15em}
-.focus .big-thin{font-family:var(--display);font-weight:200;text-transform:uppercase;font-size:clamp(30px,5.6vw,80px);line-height:1.08;letter-spacing:.02em;color:#cfcfcf;margin:0 0 .55em}
+.focus .kicker{font-size:clamp(22px,2.2vw,32px);margin-bottom:.35em}
+.focus .pill{font-size:clamp(15px,1.25vw,18px);font-weight:500;letter-spacing:.08em;padding:.5em 1.6em}
+.focus .big-thin{font-family:var(--display);font-weight:200;text-transform:uppercase;font-size:clamp(24px,3.5vw,52px);line-height:1.1;letter-spacing:.02em;color:#cfcfcf;margin:0 0 .8em}
 @media (min-width:861px){.focus .big-thin{white-space:nowrap}}
 .pill{display:inline-block;font-family:var(--display);font-size:clamp(18px,1.8vw,24px);letter-spacing:.06em;padding:.55em 1.8em;border:1.5px solid var(--text);border-radius:999px;text-decoration:none;transition:background .2s,color .2s}
 .pill:hover{background:var(--text);color:var(--bg)}

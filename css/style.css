@@ -111,9 +111,22 @@ main > section.block:first-child{padding-top:clamp(36px,4.5vw,64px)}
 .work-media.mig{background:#e9f2e4}
 .work-media.sgkb{background:#d7e3dc}
 .work:hover .work-media img{transform:scale(1.03)}
-.work h2{font-family:var(--body);font-weight:500;font-size:clamp(19px,1.6vw,22px);line-height:1.25;margin:14px 0 4px}
+.work h2,.work h3{font-family:var(--body);font-weight:500;font-size:clamp(19px,1.6vw,22px);line-height:1.25;margin:14px 0 4px}
 .work p{font-size:15px;line-height:1.45;color:var(--muted);margin:0;max-width:52ch}
-.work:hover h2{text-decoration:underline;text-decoration-color:var(--pink);text-underline-offset:4px}
+.work:hover h2,.work:hover h3{text-decoration:underline;text-decoration-color:var(--pink);text-underline-offset:4px}
+
+.all-link{margin-top:clamp(28px,3.5vw,44px);font-size:clamp(15px,1.25vw,18px);font-weight:500;letter-spacing:.08em;padding:.5em 1.6em}
+.home-work{padding-top:clamp(56px,7vw,96px)}
+#projekte-start{scroll-margin-top:73px}
+.work-grid.two{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,3vw,40px) clamp(18px,2.4vw,32px)}
+.work-grid.two .work h3{font-size:clamp(22px,2.4vw,34px);margin-top:18px}
+.work-grid.two .work p{font-size:17px}
+.crumbs{display:flex;gap:6px;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{color:var(--text)}
+.crumbs [aria-current]{color:var(--text)}
+.page-title{font-family:var(--serif);font-weight:700;font-size:clamp(56px,9vw,128px);line-height:1;letter-spacing:-.015em;margin:0 0 clamp(28px,4vw,56px)}
+.sub-title{font-family:var(--serif);font-weight:700;font-size:clamp(26px,3vw,42px);line-height:1.15;margin:0 0 clamp(18px,2vw,28px)}
 
 /* Über mich */
 .about-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);align-items:start}
@@ -213,7 +226,7 @@ img.plain{background:transparent}
   .dropped li{grid-template-columns:1fr;gap:4px}
   .hero{min-height:calc(100svh - 61px);padding:40px 0 88px}
 }
-@media (max-width:560px){.work-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.work-grid,.work-grid.two{grid-template-columns:1fr}}
 @media (max-width:480px){
   .topbar .wrap{min-height:60px;width:calc(100% - 32px)}
   .topbar .logo{font-size:24px}

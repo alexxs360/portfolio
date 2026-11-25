@@ -40,7 +40,15 @@
     <div class="portrait"><img src="images/alex1.webp" alt="Alexandre Filipowitz im Sommer, in weissem Hemd und Sonnenbrille"></div>
     <div>
       <p class="kicker">Ich bin Alex</p>
-      <h2 class="statement">Design trifft Code</h2>
+      <h2 class="statement">
+        <span class="sr-only">Musik Liebhaber, Snowboarder, UI/UX Designer, Coding</span>
+        <span class="rotator" aria-hidden="true">
+          <span class="is-active">Musik Liebhaber</span>
+          <span>Snowboarder</span>
+          <span>UI/UX Designer</span>
+          <span>Coding</span>
+        </span>
+      </h2>
       <p class="lede">Nach meiner Ausbildung als Kaufmann bin ich ins Design gewechselt. Mich interessiert, wie Menschen mit Interfaces umgehen und wie diese im Hintergrund gebaut sind, bis hinunter zur Codebasis. Heute studiere ich Digital Design an der OST und arbeite in Projekten vom offenen Problem über Research und Tests bis zum fertigen Prototyp.</p>
     </div>
   </div>
@@ -57,6 +65,21 @@
     <a class="pill" href="projekte.html">Meine Projekte</a>
   </div>
 </section>
+<script>
+(function(){
+  var items=document.querySelectorAll(".rotator > span");
+  if(items.length<2) return;
+  var i=0;
+  setInterval(function(){
+    var cur=items[i];
+    i=(i+1)%items.length;
+    var next=items[i];
+    cur.classList.remove("is-active");cur.classList.add("is-leaving");
+    next.classList.remove("is-leaving");next.classList.add("is-active");
+    setTimeout(function(){cur.classList.remove("is-leaving")},700);
+  },2500);
+})();
+</script>
 </main>
 
 <footer>

@@ -203,6 +203,7 @@ main > section.block:first-child{padding-top:clamp(36px,4.5vw,64px)}
 .cs-section p{max-width:64ch;margin:0 0 1em}
 .cs-section strong{color:var(--text)}
 .grid2,.grid3,.grid4{display:grid;gap:24px;margin:28px 0}
+.grid2 > *,.grid3 > *,.grid4 > *{min-width:0}
 .grid2{grid-template-columns:repeat(2,1fr)}
 .grid3{grid-template-columns:repeat(3,1fr)}
 .grid4{grid-template-columns:repeat(4,1fr)}
@@ -257,7 +258,7 @@ img.plain{background:transparent}
   .dropped li{grid-template-columns:1fr;gap:4px}
   .hero{min-height:calc(100svh - 61px);padding:40px 0 88px}
 }
-@media (max-width:560px){.work-grid,.work-grid.two{grid-template-columns:1fr}}
+@media (max-width:560px){.work-grid,.work-grid.two{grid-template-columns:1fr}.grid4{grid-template-columns:1fr}}
 @media (max-width:480px){
   .topbar .wrap{min-height:60px;width:calc(100% - 32px)}
   .topbar .logo{font-size:24px}

@@ -184,7 +184,10 @@ main > section.block:first-child{padding-top:clamp(36px,4.5vw,64px)}
 .contact .links{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
 
 /* ---------- Fussleiste ---------- */
-.site-foot{background:var(--accent);color:#000;padding:clamp(48px,6vw,88px) 0 24px;margin-top:clamp(40px,6vw,80px)}
+.site-foot{background:var(--accent);color:#000;padding:clamp(48px,6vw,88px) 0 24px;margin-top:clamp(40px,6vw,80px);position:relative;overflow:hidden;isolation:isolate}
+.site-foot > .wrap{position:relative;z-index:1}
+.foot-bg{position:absolute;z-index:0;right:3vw;bottom:-4vw;font-family:var(--logo);font-weight:700;font-size:clamp(220px,36vw,560px);line-height:.8;letter-spacing:-.03em;color:rgba(74,20,242,.14);display:flex;align-items:flex-end;pointer-events:none;user-select:none}
+.foot-bg .dot{width:.2em;height:.2em;border-radius:50%;background:currentColor;margin-left:.08em}
 .site-foot :focus-visible{outline-color:#000}
 .foot-head{font-family:var(--serif);font-weight:700;font-size:min(124px,max(34px,8.6vw));line-height:1;letter-spacing:-.02em;margin:0 0 clamp(36px,5vw,64px)}
 .foot-grid{display:grid;grid-template-columns:auto 1fr auto;gap:28px clamp(32px,5vw,72px);align-items:end}

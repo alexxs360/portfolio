@@ -178,7 +178,8 @@ main > section.block:first-child{padding-top:clamp(36px,4.5vw,64px)}
 .foot-logo .mono{font-size:clamp(40px,4vw,56px);color:#000}
 .foot-logo .mono .dot{background:#000}
 .foot-contact{display:grid;grid-template-columns:auto 1fr;gap:4px 28px;margin:0;font-size:17px;font-weight:500}
-.foot-contact dd{margin:0}
+.foot-contact dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.foot-grid > *{min-width:0}
 .foot-contact a{color:#000;text-underline-offset:3px}
 .foot-contact a:hover{text-decoration-thickness:2px}
 .foot-note{margin:0;max-width:30ch;font-size:17px;font-weight:500;line-height:1.4}
@@ -250,7 +251,9 @@ img.plain{background:transparent}
   .grid3,.stats,.compare,.timeline{grid-template-columns:1fr}
   .work-grid{grid-template-columns:1fr 1fr}
   .grid4{grid-template-columns:1fr 1fr}
-  .foot-grid{grid-template-columns:1fr;align-items:start}
+  .foot-grid{grid-template-columns:minmax(0,1fr);align-items:start}
+  .foot-contact{grid-template-columns:1fr;gap:0}
+  .foot-contact dd{margin-bottom:10px}
   .dropped li{grid-template-columns:1fr;gap:4px}
   .hero{min-height:calc(100svh - 61px);padding:40px 0 88px}
 }

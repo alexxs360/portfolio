@@ -125,6 +125,8 @@ main > section.block:first-child{padding-top:clamp(36px,4.5vw,64px)}
 .crumbs a{text-decoration:none}
 .crumbs a:hover{color:var(--text)}
 .crumbs [aria-current]{color:var(--text)}
+.page-head{padding-bottom:0!important}
+.page-head + .intro-block{padding-top:0}
 .page-title{font-family:var(--serif);font-weight:700;font-size:clamp(56px,9vw,128px);line-height:1;letter-spacing:-.015em;margin:0 0 clamp(28px,4vw,56px)}
 .sub-title{font-family:var(--serif);font-weight:700;font-size:clamp(26px,3vw,42px);line-height:1.15;margin:0 0 clamp(18px,2vw,28px)}
 

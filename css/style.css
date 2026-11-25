@@ -71,6 +71,7 @@ main{display:block;min-height:62vh}
 .focus .big-thin{font-family:var(--display);font-weight:200;text-transform:uppercase;font-size:clamp(40px,7vw,96px);line-height:1.05;letter-spacing:.02em;color:#cfcfcf;margin:0 0 .6em}
 .pill{display:inline-block;font-family:var(--display);font-size:clamp(18px,1.8vw,24px);letter-spacing:.06em;padding:.55em 1.8em;border:1.5px solid var(--text);border-radius:999px;text-decoration:none;transition:background .2s,color .2s}
 .pill:hover{background:var(--text);color:var(--bg)}
+.hero-cta{margin-top:clamp(28px,3.5vw,44px);font-size:clamp(17px,1.6vw,22px);font-weight:400}
 
 /* ---------- Abschnitte ---------- */
 section.block{padding:clamp(56px,8vw,110px) 0}

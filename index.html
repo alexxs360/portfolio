@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600&family=Montserrat:wght@200..800&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=863b3a5d">
+<link rel="stylesheet" href="css/style.css?v=4714ac99">
 </head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
@@ -40,37 +40,10 @@
 
 <section class="about-band" id="ueber-kurz">
   <div class="wrap">
-    <p class="reveal">Kreativer Kopf mit Sinn für Struktur. Ich studiere Digital Design an der OST und gestalte digitale Produkte, die Menschen verstehen und gerne nutzen. Dabei interessiert mich nicht nur, wie etwas aussieht, sondern auch, wie es technisch umgesetzt wird.</p>
+    <p>Kreativer Kopf mit Sinn für Struktur. Ich studiere Digital Design an der OST und gestalte digitale Produkte, die Menschen verstehen und gerne nutzen. Dabei interessiert mich nicht nur, wie etwas aussieht, sondern auch, wie es technisch umgesetzt wird.</p>
     <a class="pill" href="ueber-mich.html">Mehr über mich <span aria-hidden="true">→</span></a>
   </div>
 </section>
-<script>
-(function(){
-  var p=document.querySelector(".about-band .reveal");
-  if(!p) return;
-  // Wer "Bewegung reduzieren" eingestellt hat, sieht den Text sofort vollständig
-  if(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  var words=p.textContent.trim().split(/\s+/);
-  p.setAttribute("aria-label", p.textContent.trim());
-  p.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true">'+w+'</span>';}).join(" ");
-  var spans=p.querySelectorAll(".w");
-  p.classList.add("is-ready");
-  var ticking=false;
-  function update(){
-    ticking=false;
-    var r=p.getBoundingClientRect(), vh=window.innerHeight;
-    // 0 = Text taucht unten auf, 1 = Text ist im oberen Drittel
-    var start=vh*0.9, end=vh*0.35;
-    var prog=Math.min(1,Math.max(0,(start-r.top)/(start-end)));
-    var n=Math.round(prog*spans.length);
-    for(var i=0;i<spans.length;i++){ spans[i].classList.toggle("on", i<n); }
-  }
-  function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(update); } }
-  window.addEventListener("scroll", onScroll, {passive:true});
-  window.addEventListener("resize", onScroll);
-  update();
-})();
-</script>
 
 <section class="block home-work" id="projekte-start">
   <div class="wrap">

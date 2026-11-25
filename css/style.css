@@ -175,7 +175,7 @@ main > section.block:first-child{padding-top:var(--space-top)}
 .cv-list li{font-size:var(--fs-body)}
 
 /* Feedback Startseite */
-.feedback{border-top:1px solid var(--line);margin-top:var(--space-section)}
+.feedback{margin-top:var(--space-section)}
 .fb-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,2.4vw,32px)}
 .fb-card{margin:0;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);padding:clamp(24px,2.6vw,36px)}
 .fb-chev{width:56px;height:auto;fill:var(--logo-shadow);margin-bottom:clamp(20px,2.4vw,32px)}

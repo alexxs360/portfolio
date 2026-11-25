@@ -190,23 +190,23 @@ main > section.block:first-child{padding-top:var(--space-top)}
 .contact .links{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
 
 /* ---------- Fussleiste ---------- */
-.site-foot{background:var(--accent);color:#000;padding:var(--space-section) 0 24px;margin-top:var(--space-section);position:relative;overflow:hidden;isolation:isolate}
+.site-foot{background:var(--accent);color:#000;padding:clamp(32px,4vw,56px) 0 18px;margin-top:var(--space-section);position:relative;overflow:hidden;isolation:isolate}
 .site-foot > .wrap{position:relative;z-index:1}
-.foot-bg{position:absolute;z-index:0;right:3vw;bottom:-4vw;font-family:var(--logo);font-weight:700;font-size:clamp(220px,36vw,560px);line-height:.8;letter-spacing:-.03em;color:rgba(74,20,242,.14);display:flex;align-items:flex-end;pointer-events:none;user-select:none}
+.foot-bg{position:absolute;z-index:0;right:3vw;bottom:-4vw;font-family:var(--logo);font-weight:700;font-size:clamp(160px,22vw,340px);line-height:.8;letter-spacing:-.03em;color:rgba(74,20,242,.14);display:flex;align-items:flex-end;pointer-events:none;user-select:none}
 .foot-bg .dot{width:.2em;height:.2em;border-radius:50%;background:currentColor;margin-left:.08em}
 .site-foot :focus-visible{outline-color:#000}
-.foot-head{font-family:var(--serif);font-weight:700;font-size:min(124px,max(34px,8.6vw));line-height:1;letter-spacing:-.02em;margin:0 0 clamp(36px,5vw,64px)}
+.foot-head{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4.2vw,60px);line-height:1.05;letter-spacing:-.015em;margin:0 0 clamp(22px,2.8vw,36px)}
 .foot-grid{display:grid;grid-template-columns:auto 1fr auto;gap:28px clamp(32px,5vw,72px);align-items:end}
 .foot-logo{text-decoration:none;color:#000}
-.foot-logo .mono{font-size:clamp(40px,4vw,56px);color:#000}
+.foot-logo .mono{font-size:clamp(32px,3vw,42px);color:#000}
 .foot-logo .mono .dot{background:#000}
-.foot-contact{display:grid;grid-template-columns:auto 1fr;gap:4px 28px;margin:0;font-size:17px;font-weight:500}
+.foot-contact{display:grid;grid-template-columns:auto 1fr;gap:2px 24px;margin:0;font-size:16px;font-weight:500}
 .foot-contact dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .foot-grid > *{min-width:0}
 .foot-contact a{color:#000;text-underline-offset:3px}
 .foot-contact a:hover{text-decoration-thickness:2px}
-.foot-note{margin:0;max-width:30ch;font-size:17px;font-weight:500;line-height:1.4}
-.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(36px,5vw,56px);padding-top:16px;border-top:1px solid rgba(0,0,0,.3);font-size:14px}
+.foot-note{margin:0;max-width:30ch;font-size:16px;font-weight:500;line-height:1.4}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(22px,2.8vw,36px);padding-top:14px;border-top:1px solid rgba(0,0,0,.3);font-size:14px}
 
 /* ---------- Case Studies ---------- */
 .back{display:inline-block;margin:var(--space-top) 0 16px;text-decoration:none;color:var(--muted);font-size:15px;border-bottom:1px solid var(--line)}

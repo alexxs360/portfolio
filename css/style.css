@@ -58,6 +58,7 @@ main{display:block;min-height:62vh}
 .rotator > span.is-active{transform:none;opacity:1}
 .rotator > span.is-leaving{transform:translateY(-105%);opacity:0}
 .lede{color:var(--muted);max-width:56ch;margin:0}
+.lede + .lede{margin-top:1em}
 
 /* ---------- Startseite: Fokus mit Laptop ---------- */
 .focus{padding:clamp(60px,8vw,120px) 0;text-align:center}

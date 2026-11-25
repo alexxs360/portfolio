@@ -46,10 +46,10 @@ main{display:block;min-height:62vh}
 
 .scroll-down{position:absolute;left:50%;bottom:clamp(20px,3vh,36px);transform:translateX(-50%);font-size:22px;line-height:1;color:var(--muted);text-decoration:none;padding:8px 12px}
 .scroll-down:hover{color:var(--text)}
-#ich-bin-alex{scroll-margin-top:73px}
+#fokus{scroll-margin-top:73px}
 
 /* ---------- Startseite: Ich bin Alex ---------- */
-.intro-block{padding:clamp(32px,4vw,56px) 0}
+.intro-block{padding:clamp(40px,5vw,72px) 0}
 .intro-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:clamp(28px,4.5vw,64px);align-items:center}
 .portrait{border-radius:28px;overflow:hidden;aspect-ratio:4/5;background:var(--surface)}
 .portrait img{width:100%;height:100%;object-fit:cover}

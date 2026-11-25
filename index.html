@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@400;500;600&family=Montserrat:wght@200;600;700;800&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=25c6fc32">
+<link rel="stylesheet" href="css/style.css?v=91685451">
 </head>
 <body>
 
@@ -34,32 +34,10 @@
     <p class="role">Digital Design Student</p>
     <a class="pill hero-cta" href="kontakt.html">Kontakt aufnehmen</a>
   </div>
-  <a class="scroll-down" href="#ich-bin-alex" aria-label="Nach unten scrollen">↓</a>
+  <a class="scroll-down" href="#fokus" aria-label="Nach unten scrollen">↓</a>
 </section>
 
-<section class="intro-block" id="ich-bin-alex">
-  <div class="wrap intro-grid">
-    <div class="portrait"><img src="images/alex1.webp" alt="Alexandre Filipowitz im Sommer, in weissem Hemd und Sonnenbrille"></div>
-    <div>
-      <p class="kicker">Ich bin Alex</p>
-      <h2 class="statement">
-        <span class="sr-only">Kreativer Kopf, Musikfan, Snowboarder, UI/UX Designer, Coder</span>
-        <span class="rotator" aria-hidden="true">
-          <span class="is-active">Kreativer Kopf</span>
-          <span>Musikfan</span>
-          <span>Snowboarder</span>
-          <span>UI/UX Designer</span>
-          <span>Coder</span>
-        </span>
-      </h2>
-      <p class="lede">Offen, neugierig und gern im Team, bringe ich nicht nur Ideen in ein Projekt ein, sondern auch die Ausdauer, sie umzusetzen. Mich fasziniert, wie Menschen mit Interfaces umgehen und wie diese technisch umgesetzt werden. In verschiedenen Projekten konnte ich schon den ganzen Weg gehen. Vom offenen Problem über Interviews und Usability-Tests bis zum funktionierenden Prototyp.</p>
-      <p class="lede">Gutes Design braucht für mich zwei Dinge: Empathie, um zu verstehen, was Menschen wirklich brauchen, und Struktur, um daraus etwas zu bauen, das funktioniert. Beides bringe ich mit. Die Ausbildung hat mir den Blick für Ziele, Abläufe und Zahlen gegeben, das Studium den Blick für Menschen und Technik.</p>
-      <p class="lede">Am liebsten arbeite ich an Projekten, die etwas Neues wagen. Mich motiviert, wenn aus einer Idee im Team etwas Echtes entsteht.</p>
-    </div>
-  </div>
-</section>
-
-<section class="focus">
+<section class="focus" id="fokus">
   <div class="wrap">
     <div class="laptop" aria-hidden="true">
       <div class="screen"><img src="images/mig_cover.webp" alt=""></div>
@@ -70,21 +48,6 @@
     <a class="pill" href="projekte.html">Meine Projekte</a>
   </div>
 </section>
-<script>
-(function(){
-  var items=document.querySelectorAll(".rotator > span");
-  if(items.length<2) return;
-  var i=0;
-  setInterval(function(){
-    var cur=items[i];
-    i=(i+1)%items.length;
-    var next=items[i];
-    cur.classList.remove("is-active");cur.classList.add("is-leaving");
-    next.classList.remove("is-leaving");next.classList.add("is-active");
-    setTimeout(function(){cur.classList.remove("is-leaving")},700);
-  },2500);
-})();
-</script>
 </main>
 
 <footer>

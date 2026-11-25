@@ -11,8 +11,8 @@ Statische Webseite aus HTML und CSS, ohne Build-Schritt. Läuft direkt auf GitHu
 | `eco-island.html` | Case Study Eco Island (Migros) |
 | `abo-manager.html` | Case Study Abo-Manager (SGKB) |
 | `ueber-mich.html` | Über mich |
-| `lebenslauf.html` | Lebenslauf |
-| `kontakt.html` | Kontakt |
+| `skills.html` | Skills (Fähigkeiten, Tools, Ausbildung) |
+| `kontakt.html` | Weiterleitung zur Kontakt-Leiste |
 | `404.html` | Seite für falsche Adressen |
 | `css/style.css` | Gestaltung aller Seiten |
 | `images/` | Bilder aus den Case Studies |

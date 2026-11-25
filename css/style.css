@@ -52,7 +52,7 @@ main{display:block;min-height:62vh}
 .kicker{font-family:var(--serif);font-weight:700;font-size:clamp(28px,3vw,40px);margin:0 0 .4em}
 .statement{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(42px,5.8vw,84px);line-height:.95;letter-spacing:-.01em;margin:0 0 .6em}
 .intro-grid > div:last-child{container-type:inline-size}
-.intro-grid .statement{font-size:min(84px,10.5cqi)}
+.intro-grid .statement{font-size:min(68px,9cqi)}
 .rotator{display:block;position:relative;height:1.95em;overflow:hidden}
 .rotator > span{position:absolute;left:0;top:0;width:100%;transform:translateY(105%);opacity:0;transition:transform .65s cubic-bezier(.2,.75,.2,1),opacity .65s}
 .rotator > span.is-active{transform:none;opacity:1}

@@ -164,11 +164,20 @@ main > section.block:first-child{padding-top:clamp(36px,4.5vw,64px)}
 .contact .big:hover{color:var(--accent)}
 .contact .links{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
 
-footer{padding:40px 0 56px;font-size:15px;color:var(--muted)}
-.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:24px}
-.foot-links{display:flex;gap:24px}
-.foot a{text-decoration:none}
-.foot a:hover{color:var(--text)}
+/* ---------- Fussleiste ---------- */
+.site-foot{background:var(--accent);color:#000;padding:clamp(48px,6vw,88px) 0 24px;margin-top:clamp(40px,6vw,80px)}
+.site-foot :focus-visible{outline-color:#000}
+.foot-head{font-family:var(--serif);font-weight:700;font-size:min(124px,max(34px,8.6vw));line-height:1;letter-spacing:-.02em;margin:0 0 clamp(36px,5vw,64px)}
+.foot-grid{display:grid;grid-template-columns:auto 1fr auto;gap:28px clamp(32px,5vw,72px);align-items:end}
+.foot-logo{text-decoration:none;color:#000}
+.foot-logo .mono{font-size:clamp(40px,4vw,56px);color:#000}
+.foot-logo .mono .dot{background:#000}
+.foot-contact{display:grid;grid-template-columns:auto 1fr;gap:4px 28px;margin:0;font-size:17px;font-weight:500}
+.foot-contact dd{margin:0}
+.foot-contact a{color:#000;text-underline-offset:3px}
+.foot-contact a:hover{text-decoration-thickness:2px}
+.foot-note{margin:0;max-width:30ch;font-size:17px;font-weight:500;line-height:1.4}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(36px,5vw,56px);padding-top:16px;border-top:1px solid rgba(0,0,0,.3);font-size:14px}
 
 /* ---------- Case Studies ---------- */
 .back{display:inline-block;margin:32px 0 8px;text-decoration:none;color:var(--muted);font-size:15px;border-bottom:1px solid var(--line)}
@@ -236,6 +245,7 @@ img.plain{background:transparent}
   .grid3,.stats,.compare,.timeline{grid-template-columns:1fr}
   .work-grid{grid-template-columns:1fr 1fr}
   .grid4{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr;align-items:start}
   .dropped li{grid-template-columns:1fr;gap:4px}
   .hero{min-height:calc(100svh - 61px);padding:40px 0 88px}
 }

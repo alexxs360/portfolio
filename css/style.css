@@ -73,11 +73,6 @@ main:focus{outline:none}
 .scroll-down:hover{color:var(--text)}
 #fokus{scroll-margin-top:73px}
 
-/* Startseite: jeder Bereich füllt den Bildschirm, ein Scroll springt zum nächsten */
-html.snap .home-work{min-height:calc(100vh - 73px);min-height:calc(100svh - 73px);display:flex;align-items:center;padding:var(--space-top) 0}
-html.snap .home-work > .wrap{width:min(1180px,100% - 48px)}
-html.snap .site-foot{margin-top:0}
-
 /* ---------- Startseite: Ich bin Alex ---------- */
 .intro-block{padding:var(--space-section) 0}
 .intro-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:clamp(28px,4.5vw,64px);align-items:center}

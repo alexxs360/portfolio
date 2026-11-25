@@ -63,7 +63,7 @@ main:focus{outline:none}
 .statement{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(42px,5.8vw,84px);line-height:.95;letter-spacing:-.01em;margin:0 0 .6em}
 .intro-grid > div:last-child{container-type:inline-size}
 .intro-grid .statement{font-size:min(64px,7.4cqi);margin-bottom:.45em}
-.rotator{display:block;position:relative;height:1.05em;overflow:hidden}
+.rotator{display:block;position:relative;height:1.05em;overflow:hidden;cursor:pointer}
 .rotator > span{position:absolute;left:0;top:0;width:100%;white-space:nowrap;transform:translateY(105%);opacity:0;transition:transform .65s cubic-bezier(.2,.75,.2,1),opacity .65s}
 .rotator > span.is-active{transform:none;opacity:1}
 .rotator > span.is-leaving{transform:translateY(-105%);opacity:0}
@@ -246,4 +246,4 @@ img.plain{background:transparent}
   .nav{gap:12px}
   .nav a{font-size:13px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.rotator > span,.rotator > span.is-leaving{transform:none}}

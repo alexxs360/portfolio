@@ -36,3 +36,19 @@ Kopfbereich und Fusszeile stehen in jeder HTML-Datei. Wenn du dort etwas änders
 Repository `portfolio`, Adresse: https://alexxs360.github.io/portfolio/
 
 Settings → Pages → Source: *Deploy from a branch*, Branch `main`, Ordner `/ (root)`.
+
+## Designsystem (in `css/style.css` unter `:root`)
+
+| Stufe | Variable | Grösse | Schrift | Verwendung |
+|---|---|---|---|---|
+| Display | `--fs-display` | 42–86 px | Source Serif 4, 700 | Name im Hero, Seitentitel |
+| H2 | `--fs-h2` | 28–48 px | Source Serif 4, 700 | Abschnittstitel, Fussleiste |
+| H3 | `--fs-h3` | 20–24 px | Inter, 600 | Projekt- und Kartentitel, Skills |
+| Lead | `--fs-lead` | 19–26 px | Montserrat 300 / Inter 500 | Einleitungen, Band, Zitate |
+| Body | `--fs-body` | 18 px (mobil 17) | Inter, 400 | Fliesstext |
+| Body S | `--fs-body-s` | 16 px | Inter | Kartentext, Kontakt |
+| Small | `--fs-small` | 15 px | Inter | Navigation, Bildlegenden, Meta |
+| Label | `--fs-label` | 14 px | Montserrat/Inter | Abschnitts-Labels, Fusszeile |
+| Button | `--fs-button` | 15–18 px | Montserrat, 500 | alle Buttons |
+
+Abstände: `--space-top`, `--space-title`, `--space-section`. Farben: `--accent` (Lila), `--band` (Lavendel), `--logo-shadow` (Neon-Violett).
